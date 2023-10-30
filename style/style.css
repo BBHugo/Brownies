@@ -1,0 +1,379 @@
+ html { /*Affects the whole page*/
+    text-align: center; /*aligned my entire page*/
+    background: gray;
+    color: whitesmoke;
+    font-family: 'Oswald', sans-serif; /* Remember to get the name directly from the website where you got the font */
+    width: 102vw; /*This is vew width. Honestly don't know how it works quiet yet, just know its related to the user's device width. In this i used it since the page didn't quite cover the full screen */
+}
+
+body {
+    margin: 0; /*Removes the margins in the page so that everything can be flush with the edges of the pages. */
+}
+
+.navPlaceHolder{
+    height: 25px;
+    width: 100%;
+}
+
+header {
+    display: flex; /*Makes this the flex container to affect the direct children */
+    width: 100%;
+    height: 30px;
+    /* border: 5px solid red; */
+    justify-content: space-around; /*as the flex container, this allows me to place the flex item (the children) to the far right */
+    position: fixed; /*This and the next 2 are to create a STICKY nav bar*/
+    top: 0; /*sticks the navbar to the very top of the page and keeps it there*/
+    z-index: 1030; /*To prevent the navbar getting covered up by other ocntent */
+    right: 0; /*In some px width the nav doesn't stick to the right side of the page, this fixes it, (Doesn't work beyond 1440px) */
+    justify-content: stretch; /*In this current page, doesn't do anything */
+}
+
+
+.iconName { /*the container for both the icon and the name*/
+    background-color: whitesmoke;
+    border-radius: 50px; /*Changes the square border to a curved circle*/
+    height: 35px;
+    display: flex; /*So that I can get the icon and name next to each other */
+    margin-right: 10%;
+    color: black;
+}
+
+
+.fa-flask { /*The icon*/
+       font-size: 25px;
+       margin: auto; /*Without this the icon is floating top left, this centers it */
+       /* text-align: center; */ /*Doesn't actually do anything */
+}
+
+.hugoRekt{ /*The Hugo's Rektcipes part */
+    /* text-align: center; */ /*Doesn't actuallly do anything */
+    margin: auto; /*So that we can center the stuff */
+    font-size: .7rem;
+    width: 60%; /*Any smaller and Hugo's Rektcipes becomes too big for the container, any bigger and it pushes out the icon */
+}
+
+.lightDark {
+    border-radius: 35%;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    font-family: 'Oswald', sans-serif; /* Remember to get the name directly from the website where you got the font */
+    font-weight: 900;
+}
+
+/* THE BELOW IS ALL OBSOLETE
+/*.hugoRekt { /*the Hugo's Rektcipes part */
+/*font-size: 1rem; /*honestly, idk where the rem got it's size, I think it's the default browser */
+/*    margin: 0; /*removed the annoying margins that were making the nav go beyond the container */
+/*    text-align: start;
+/*    /* align-self: flex-start; */
+/*    margin-left: auto;
+/*    margin-right: 12%;
+/*    background-color: whitesmoke;
+/*    border-radius: 50px;
+/*    text-align: end;
+/*    height: 35px;
+/*} */
+
+
+nav {
+    width: 85%; /*makes the nav take up 75% of the header container*/
+    /* max-width: 450px; */ /*Was messing too much with stuff*/
+}
+
+.navList { /*ul */
+    display: flex; /*makes the ul the flex-container and the li the flex-items so I can move them around */
+    justify-content: space-between; /*evens out the li's with space*/
+    border: 1px solid black;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    border-radius: 0 0 0 50px; /* Rounds the edges of the border (or element) the first one is the top left corner, second top right, third bottom right, last is bottom left */
+}
+
+li {
+    margin: auto; /*centers the text vertically (and maybe also horizontally too)*/
+}
+
+#overall {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    font-family: 'fuggles', sans-serif; /*The bottom didn't work, make sure the name is corrent */
+    /* font-family: 'Oswald', sans-serif; receives the font from the html head */
+    font-weight: 400; /*one of the fonts downloaded */
+    /* justify-self: center; */
+    height: 40px;
+    /* border: 5px solid black;  */
+    margin-top: 2%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5.5rem;
+    /* text-align: center; */ /*This only aligns it horizontally which it already is from the html property in css*/
+
+}
+
+h3, h4 {
+    font-family: 'Crossiant One';
+    font-weight: 600;
+    font-family: 'fuggles', sans-serif;
+    font-weight: 400;
+    font-size: 4.5rem;
+    margin: 5% 0 5% 0;
+    text-decoration: underline;
+    font-size: 3rem;
+}
+
+img {
+    height: 325px;
+    width: 325px;
+    /* border: 1px solid whitesmoke; */
+    /* border-radius: 35px; */
+    /* transform: rotate(40deg); */ /*rotates the image to whatever degree I want (Other values to rotate available too)*/
+}
+
+ul {
+    background: whitesmoke;
+    padding: 0;
+}
+
+ol {
+    margin: auto; /*didn't do much, most likely from centered text up in first html css */
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    /* background: black; */
+   /*width: 100%; /*Somethings wrong, the box isn't centered or extending all the way across */
+   color: black;
+}
+
+h5{
+    text-decoration: underline;
+}
+
+section {
+    height: 60%;
+    /* border: 1px solid black; */
+    /*max-width: 600px; /*Whenever we make the display (window) bigger, we dont want it to keep stretching) */ /*NEW SHIT: If we put this on, the sections will just become lopsided and not center the page, focus on the ones you dont want to expand instead of making ALL sections max-width*/
+    margin: auto; /*puts the sections in the middle of the page since their max widths are 600 and will move to the very left when 600px is reached*/
+}
+
+a { /*for the links */
+    color: black;
+    text-decoration: none; /* Removes the underline from the anchor tag links */
+}
+
+footer {
+    font-size: 2rem;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+}
+
+footer ol {
+    display: flex;
+}
+
+.relatedRecipes { /*Cuz for some reason the h3 margin doesn't affect his one */
+    margin: 10px 0 10px 0;
+    width: auto;
+    margin: 0;
+    right: 0;
+}
+
+.middle{
+    /* justify-self: stretch; */ /*honestly don't know what this does, same with or without */
+    font-size: 2rem;
+}
+
+
+.left {
+    margin-top: 50px;
+    margin-right: 2%;
+    left: 0;
+    width: 200px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+}
+
+.left img, .right img {
+    /* background-color: orange; */
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    margin-top: 50px;
+    margin-left: 2%;
+    width: 200px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+}
+
+
+#abra { /*Hidden until user reaches 425px*/
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    display: flex;
+    margin: auto;
+    /* justify-self: stretch; */
+    flex-wrap: wrap;
+}
+
+#abra img {
+    height: 40px;
+    width: auto;
+    /* min-height: 0; */
+    flex-grow: 1;
+}
+/* *******************************************************
+MEDIA QUERIES
+******************************************************* */
+@media screen and (min-width: 1760px) {
+    .overall, h1 {
+        font-size: 5rem;
+
+    }
+    
+    .extraRecipes {
+        font-size: 2rem;
+    }
+
+    h3, h4 {
+        font-size: 4rem;
+    }
+
+
+}
+
+@media screen and (max-width: 1050px) {
+    .left img, .right img {
+        width: 160px;
+        height: 160px;
+    }
+
+    footer {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .left img, .right img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html{
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .left img, .right img {
+        height: 85px;
+        width: 85px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hugoRekt{
+        display: none;
+    }
+    .iconName{
+        width: 10%;
+    }
+
+    .left img, .right img {
+    height: 60px;
+    width: 60px;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .left img, .right img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .left, .right {
+        margin-top: 90%;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .left, .right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .threeTwenty{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .threeSevenFive {
+        display: none;
+    }
+    
+    body .middle {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: .8rem;
+    }
+
+    h3 {
+        font-size: 2.75rem;
+    }
+}
+
+@media screen and (min-width: 426px){
+    #abra{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 323px) {
+    .chosenOne {
+        display: none;
+    }
+
+     h1 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+}
