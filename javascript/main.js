@@ -101,4 +101,3 @@ function lightDarkModes() {
 
 
 
-"C:\Anything Coding\VSCode"
