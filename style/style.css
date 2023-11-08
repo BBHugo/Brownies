@@ -95,6 +95,10 @@ li {
     margin: auto; /*centers the text vertically (and maybe also horizontally too)*/
 }
 
+.threeSevenFive {
+    border-radius: 0 0 0 50px;
+}
+
 #overall {
     display: flex;
     width: auto;
@@ -153,6 +157,8 @@ li {
     /* background: black; */
    /*width: 100%; /*Somethings wrong, the box isn't centered or extending all the way across */
    color: black;
+   height: 100%;
+   width: 100%;
 }
 
 h5{
@@ -169,6 +175,11 @@ section {
 a { /*for the links */
     color: black;
     text-decoration: none; /* Removes the underline from the anchor tag links */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
 }
 
 footer {
@@ -236,6 +247,22 @@ footer ol {
     /* min-height: 0; */
     flex-grow: 1;
 }
+
+
+/********************************************************
+CSS EFFECTS
+*********************************************************/
+li:hover {
+    background: rgb(28, 26, 26);
+    font-weight: 300;
+}
+
+a:hover {
+    color: whitesmoke;
+    align-items: baseline;
+}
+
+
 /* *******************************************************
 MEDIA QUERIES
 ******************************************************* */
