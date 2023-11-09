@@ -253,7 +253,8 @@ footer ol {
 CSS EFFECTS
 *********************************************************/
 li:hover {
-    background: rgb(28, 26, 26);
+    /* background: rgb(28, 26, 26); */
+    background: linear-gradient(0.25turn,gray, rgb(43, 43, 45));
     font-weight: 300;
 }
 
